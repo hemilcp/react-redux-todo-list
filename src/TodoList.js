@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import TodoTasks from './TodoTasks';
 
 class TodoList extends Component{
     constructor(props){
@@ -36,6 +37,7 @@ class TodoList extends Component{
                         <button type="submit">Add</button>
                     </form>
                 </div>
+                <TodoTasks taskEntries={this.state.tasks} />
             </div>
         );
     }
